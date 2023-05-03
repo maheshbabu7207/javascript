@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input placeholder="user name">
+        <br><br>
+        <input placeholder="password" type="password">
+        <br><br>
+        <input type="range" min="0" max="100" value="0">
+        <br><br>
+        <input type="color" >
+        <br><br>
+        <input type="button" value="Click" onclick="inputvalue()">
+    </form>
+    <script>
+        function inputvalue()
+        {
+            var input=document.getElementsByTagName("input")
+            console.log(input)
+            var username=input[0].value
+            var password=input[1].value
+            var range=input[2].value
+            var col=input[3].value
+
+            console.log(username)
+            console.log(password)
+            console.log(range)
+            console.log(col)
+        }
+    </script>
+</body>
+</html>

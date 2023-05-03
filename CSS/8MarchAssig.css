@@ -1,0 +1,18 @@
+body{
+    background-color: blue;
+}
+
+#d1{
+    width: 13%;
+    height: 450px;
+    font-size: 50PX;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(java.jpg),url(jav.jpg),url(j.jpg) ;
+    background-position: right top,left,right bottom;
+    background-size: 100px;
+    border: 8px solid lime;      
+}
+.subdiv{
+    align-self: 50px;
+}

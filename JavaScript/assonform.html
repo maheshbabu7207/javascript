@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input>
+        <input>
+        <br><br>
+        DOB<input>
+        <br><br>
+        gender
+        <br>
+        male<input>
+        female<input>
+        others<input>
+        <br><br>
+        Phno<input>
+        <br><br>
+        Email<input>
+        <br>
+        <input>
+    </form>
+    <script>
+        var allforms=document.forms;
+        console.log(allforms)
+        allforms[0].elements[0].Placeholder="First name"
+        allforms[0].elements[1].Placeholder="Last name"
+        allforms[0].elements[2].type="month"
+        allforms[0].elements[3].type="radio"
+        allforms[0].elements[3].name="male"
+        allforms[0].elements[4].type="radio"
+        allforms[0].elements[4].name="female"
+        allforms[0].elements[5].type="radio"
+        allforms[0].elements[5].name="others"
+        allforms[0].elements[6].type="number"
+        allforms[0].elements[7].type="Email"
+        allforms[0].elements[8].type="submit"
+    </script>
+</body>
+</html>

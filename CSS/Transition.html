@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            position: relative;
+            left: 10px;
+            width: 100px;
+            transition: all 5s;
+        }
+        #container{
+            position: relative;
+            width: 100vw;
+            height: 100vw;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #container:hover img{
+            left: 80vw;
+        }
+        #A{
+            transition-timing-function: ease;
+        }
+        #B{
+             transition-timing-function: ease-in;
+             transition-delay: 2s;
+        }
+        #C{
+            transition-timing-function: ease-out;
+        }
+        #D{
+            transition-timing-function: ease-in-out;
+        }
+        #E{
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+     <img id="A" src="https://media1.giphy.com/media/7Gq3HNqcBvUWmVEOCR/giphy.gif">
+     <img id="B" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a2c99638830641.577126a36dd77.gif">
+     <img id="C" src="https://media1.giphy.com/media/7Gq3HNqcBvUWmVEOCR/giphy.gif">
+     <img id="D" src="">
+     <img id="E" src="">
+    </div>
+</body>
+</html>

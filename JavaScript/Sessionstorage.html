@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <button>clear</button>
+    <input type="button" value="remove">
+    <script>
+        console.log(window)
+        var name=prompt("Enter Name");
+        sessionStorage.setItem("Name",name)
+        console.log(sessionStorage.getItem("Name"))
+        var button=document.querySelector("input")
+        button.addEventListener("click",function(){
+            sessionStorage.removeItem("Name")
+        })
+    </script>
+</body>
+</html>

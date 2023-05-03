@@ -1,0 +1,80 @@
+#d1{
+    width: 70%;
+    height: 500px;
+    background-color: black;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+#d1>p{
+    background-color: lime;
+    width: 40%;
+    font-size: 30px;
+    text-align: justify;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#d1>img{
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+p,img{
+    width: 30%;
+    height: 250px;
+    padding: 20px;
+    margin-top: 5px;
+    transition: 3s;
+}
+#d1:hover p{
+    top: 140px;
+    left: 45%;
+}
+#d1:hover img{
+    top: 140px;
+    right: 45%;
+}
+#s1{
+    width: 60%;
+    height: 250px;
+    background-image: linear-gradient(greenyellow,cyan);
+    float: left;
+    margin-top: 4px;
+}
+#s1>fieldset{
+    width: 30%;
+    height: 200px;
+    border-width: 10px;
+    border-radius: 30% 0% 30% 0%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    margin-top: 4%;
+    margin-top: 5%;
+    position: absolute;
+    right: 30px;
+    top: 30%;
+}
+#div1{
+    width: 80%;
+    height: 500px;
+    background-image: url(pex.jpg);
+    float: left;
+    margin-top: 3%;
+    background-repeat: no-repeat;
+    background-size: 70% 400px;
+    background-color: brown;
+    background-position: center;
+    filter: blur(3px);
+}
+#heading{
+    font-size: 100px;
+    position: absolute;
+    top: 750px;
+    left: 2%;
+    background-color:rgba(107, 74, 139,0.6);
+    padding: 10px;
+    color: white;
+}

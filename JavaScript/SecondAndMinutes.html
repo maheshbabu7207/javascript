@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="sec" placeholder="Enter the sec">
+    <input id="min" placeholder="Enter the min">
+    <input type="button" value="Start" onclick="collectvalue()">
+    <script>
+        function collectvalue()
+        {
+            var minfromuser=document.getElementById("min").value;
+            function countmin()
+            {
+                if(minfromuser>0)
+                {
+                    var sec=60;
+                    minfromuser--;
+                    document.getElementById("min").value=minfromuser;
+                    var a=setTimeout(countmin,6000);
+                    function countsec()
+                    {
+                        if(sec>0)
+                        {
+                            sec--;
+                            document.getElementById("sec").value=sec;
+                            var b=setTimeout(countsec,1000)
+                        }
+                    }
+                    countsec();
+                }
+            }
+            countmin()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#fs
+{
+    width: 50%;
+    height: 400px;
+    background-image: linear-gradient(green,aqua);
+}
+#ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}

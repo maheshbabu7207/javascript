@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            transition: all 5s;
+            transition-timing-function: ease-in-out;
+        }
+       body{
+             height: 90vh;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             /* background-image: url();
+             background-size: 100%;
+             margin-top: 50px; */
+       }
+       img{
+        width: 300px;
+        filter: drop-shadow(5px 5px 5px black);
+       }
+       
+       button{
+        position: absolute;
+        right: 100px;
+        background-color: red;
+        border: 5px dotted yellow;
+        outline: double 10px red;
+        width: 250px;
+        height: 40px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        box-shadow: 15px 15px 15px black;
+        transition: transform 0.5s;
+       }
+       button:hover{
+        transform: scale(1.2);
+       }
+    </style>
+</head>
+<body>
+    <script>
+       var image=document.createElement("img")
+       document.body.appendChild(image)
+       image.src="spin wheel.png"
+       var image1=document.createElement("img")
+       document.body.appendChild(image1)
+       image1.src="gold arrow.jpeg"
+       var but=document.createElement("button")
+       document.body.appendChild(but)
+       but.innerHTML="Lucky spin!"
+       but.addEventListener("click",function()
+       {
+        var randomNum=Math.random()*360;
+        image.style.rotate=`${randomNum*180}deg`
+       })
+    </script>
+</body>
+</html>

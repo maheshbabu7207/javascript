@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input>
+        <input>
+        <input>
+    </form>
+    <form>
+        <input>
+        <input>
+        <input>
+    </form>
+    <script>
+        var allforms=document.forms;
+        console.log(allforms)
+        allforms[0].elements[0].type="submit"
+        allforms[0].elements[1].type="password"
+        allforms[0].elements[0].placeholder="this is placeholder"
+        allforms[1].elements[0].type="range"
+        allforms[1].elements[1].type="radio"
+        allforms[1].elements[1].name="a"
+        allforms[1].elements[2].type="radio"
+        allforms[1].elements[2].name="a"
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+#d1{
+   width: 100%;
+   height: 300px;
+   background-image: linear-gradient(cyan,black,cyan);
+   float: left;
+}
+#d1 h1{
+  font-size: 60px;
+  color: lime;
+  border: black solid 10px;
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px lime;
+}
+#navigation
+{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(black,silver);
+    float: left;
+    position: sticky;
+    top: 0px;
+}
+body
+{
+  margin: 0px;
+  height: 200px;
+}
+#fc
+{
+    font-size: 30px;
+    color: lime;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+#fc>li{
+  padding: 20px;
+}
+li>a
+{
+  text-decoration: none;
+  color: lime;
+}
+#fc>li:hover{
+  background-color: black;
+  border-radius: 40px;
+}
+li:hover a{
+  color: white;
+}
+#sublist{
+  list-style-type: none;
+  color: black;
+  /* to hide sublist*/
+  display: none;
+  /* provide position of sublist per body tag*/
+  position: absolute;
+}
+#fc>li:hover #sublist{
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+}
+#sublist>li{
+  padding-top: 10px;
+  text-align: center;
+}
+#sublist>li:hover{
+  background-color: rgba(255, 0, 0, 0.279);
+}
+#course:hover #sublist{
+  display: block;
+}

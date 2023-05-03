@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Arrow Function</h1>
+    <script>
+        /*let a=()=>{
+            console.log("Welcome to arrow function")
+        }
+        a();*/
+       /* let a=(b,c)=>{
+            console.log(b)
+            console.log(c)
+        }
+        a(16,61);*/
+       /* let a=(b,c)=>{
+            console.log(b);
+            console.log(c);
+            return b+c;
+        }
+        console.log(a(2,3))*/
+        var a=(gender,subject,numberDays,StartDay,EndDay,reson)=> {
+       
+            var a=`Res.${gender}`
+            var bodyofLetter= `Im the student of your college i need ${numberDays} Days of leave from ${StartDay} to ${EndDay} because ${reson} please grant me leave`
+            console.log(a)
+            console.log(subject)
+            console.log(bodyofLetter)
+        }
+        a("sir","Requesting for leave",2,"29/march/2023","1/apr/2023"," i am suffering from fever");
+    </script>
+</body>
+</html>

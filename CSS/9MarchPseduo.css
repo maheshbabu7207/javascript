@@ -1,0 +1,73 @@
+#d1
+{
+    width: 25%;
+    height: 500px;
+    background-image: linear-gradient(yellow,black);
+    border: 8px solid cyan;
+    display: flex;
+    justify-content: center;
+}
+#d1>div{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: black 10px solid;
+    background-color: blueviolet;
+   /* margin-top: 100px;*/
+    transition: 3s;
+}
+#d1:hover .subdiv
+{
+    margin-top: 0px;
+}
+
+.subdiv:first-child{
+    margin-top: 300px;
+}
+.subdiv:nth-child(2){
+    margin-top: 200px;
+}
+.subdiv:last-child{
+    margin-top: 300px;
+}
+ol{
+   font-size: 30px;
+   margin-left: 100px;
+   padding-bottom: 30px;
+   text-transform: uppercase;
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color: blue;
+}
+
+li:nth-child(even){
+    color: green;
+}
+
+li:nth-child(5){
+    text-decoration: underline;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+}
+::selection{
+    background-color: blueviolet;
+    color: yellow;
+}
+
+#order>li{
+    color: black;
+}
+
+li::marker{
+    color: blue;
+    content: "*";
+}
+

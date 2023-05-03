@@ -1,0 +1,49 @@
+#strong1,em
+{
+  font-size: 50px;
+  background-color: green;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  /* not applicable*/
+  margin-top: 60px;
+  margin-left: 50px;
+  /* to connvert inline into block*/
+  display: block;
+}
+#div1
+{
+    font-size: 50px;
+    color: black;
+    background-color: wheat;
+    width: 30%;
+    height: 100px;
+    text-align: right;
+    margin-top: 100px;   
+}
+#heading1
+{
+    background-color: aqua;
+    color: black;
+    font-size: 50px;
+    width: 400px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#div1,
+#heading1
+{
+    /* to convert block to inline
+    display:inline;*/
+    display: inline-block; /*inline-block*/
+}
+.inputbox
+{
+   font-size: 50px;
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    /* to convert into block*/
+    display: block;
+}

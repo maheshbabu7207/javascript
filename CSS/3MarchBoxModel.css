@@ -1,0 +1,71 @@
+#fs
+{
+    width: 50%;
+    height: 200px;
+    border-width: 30px;
+    border-color: skyblue;
+    border-style: solid;
+    /* To create msapcing outside border*/
+    margin: 100px;
+}
+hr
+{
+    border-width: 40px;
+    border-color: pink;
+    border-style: double;
+}
+#fs strong
+{
+     font-size: 40px;
+     border-width: 4px;
+     border-style: dashed;
+     border-color: black;
+}
+form
+{
+    width: 50%;
+    height: 200px;
+    border-color: green blue blueviolet red;
+    border-style: dashed solid double solid;
+    border-width: 20px 10px 20px 10px;
+}
+form input
+{
+    font-size: 50px;
+    text-align: center;
+    border-width: 30px 1px 30px 1px;
+    border-style: double solid dashed solid;
+}
+#d1
+{
+    width: 80%;
+    height: 300px;
+    border: 10px solid black;
+}
+#d1 h1
+{
+   font-size: 100px;
+   text-align: center;
+   text-decoration: underline;
+   border: dotted red 8px;
+   width: 80%;
+}
+#btn
+{
+    font-size: 100px;
+    text-transform: uppercase;
+    border: solid 7px black;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+#inputbox
+{
+    font-size: 60px;
+    text-align: center;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: solid blue 5px;
+    outline: 0px;
+}

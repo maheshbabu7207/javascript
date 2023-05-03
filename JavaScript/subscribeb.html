@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button id="subscribeBut" value="subscribe" onclick="subscribe()"><img id="bell" src="./bell-regular.svg"><span id="status">Subscribe</span><img id="arrow" src="./chevron-down-solid.svg"></button>
+    <div id="window">
+        <button onblur="remove()" onmousedown="allbell()" class="subbut"><img class="subbell" id="a" src="./bell-solid.svg"><span class="substatus">ALL</span></button>
+        <button onblur="remove()" class="subbut" onmousedown="normalBell()"><img class="subbell" id="d" src="./bell-regular.svg"><span class="substatus">personalised</span></button>
+        <button onblur="remove()" class="subbut" onmousedown="nonebell()"><img class="subbell" id="b" src="./bell-slash.svg"><span class="substatus">None</span></button>
+        <button onblur="remove()" class="subbut" onmousedown="unsub()"><img class="subbell" id="c" src="./unsubscribe.jpg"><span class="substatus">unsubscribe</span></button>
+    </div>
+    <div id="unsubscribe">
+        <h6 id="message">Unsubscribe from slaying the dragon?</h6>
+    </div>
+</body>
+</html>

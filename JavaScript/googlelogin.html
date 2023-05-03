@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #field{
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #leg{
+            display: none;
+            font-size: 20px;
+        }
+        #inp{
+            padding-left: 10px;
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="=field">
+        <legend id="leg">Email or Phone</legend>
+        <input id="inp" placeholder="Email or Phone" onfocus="clickins()" onblur="clickout()">
+    </fieldset>
+    <script>
+        function clickins()
+        {
+              document.getElementById("inp").removeAttribute("placeholder")
+              document.getElementById("leg").style.display="block"
+              document.getElementById('leg').style.color="blue"
+              document.getElementById("field").style.borderColor="blue"
+        }
+         function clickout()
+         {
+            document.getElementById("inp").setAttribute("placeholder","Email or Phone")
+            document.getElementById("leg").style.display="none"
+            document.getElementById("leg").style.color="black"
+            document.getElementById("field").style.borderColor="black"
+         }   
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: url(pex.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-attachment: fixed;
+}
+section>p
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: olive;
+}
+#frm
+{
+    width: 60%;
+    height: 250px;
+    background-color: rgba(131, 131, 189,0.3);
+}
+#frm>label
+{
+    font-size: 40px;
+    font-style: italic;
+}
+#frm>input
+{
+  font-size: 40px;  
+  font-weight: bold;
+  background: transparent;
+  border-width: 10px;
+}

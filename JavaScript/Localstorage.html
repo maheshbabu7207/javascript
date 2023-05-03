@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="click remove">
+    <input type="button" value="clear" id="bt2">
+    <script>
+        var name="mahi"
+        localStorage.setItem("name",name)
+        localStorage.setItem("age",45);
+        localStorage.setItem("gender","male")
+
+        var nameforlocalstorage=localStorage.getItem("name");
+        var ageforlocalstorage=localStorage.getItem("age")
+        var genderforlocalstorage=localStorage.getItem("gender")
+        console.log(nameforlocalstorage)
+        console.log(ageforlocalstorage)
+        console.log(genderforlocalstorage)
+
+        var button=document.querySelector("input")
+        button.addEventListener("click",function() {
+            localStorage.removeItem("gender")
+        })
+
+        var button2=document.querySelector("#bt2")
+        button2.addEventListener("click",function(){
+            localStorage.clear();
+        })
+    </script>
+</body>
+</html>

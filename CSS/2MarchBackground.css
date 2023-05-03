@@ -1,0 +1,59 @@
+#d1
+{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    background-image: url(https://media2.giphy.com/media/UuTIijN6ih5kzV9nNI/giphy.gif);
+    background-repeat: repeat-x;
+    float: left;
+    background-size: 33% 300px;
+}
+#d1 marquee
+{
+    font-size: 50px;
+    font-family: cursive;
+    color: black;
+    background-color: aqua;
+    width: 50%;
+}
+#d2
+{
+    width: 50%;
+    height: 450px;
+    background-color: skyblue;
+    float: left;
+    background-image: url(https://media2.giphy.com/media/UuTIijN6ih5kzV9nNI/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 60% 300px;
+    background-position: left 60px top 30%;
+}
+#d2 p
+{
+   font-size: 30px;
+   text-align: justify;
+   font-family: fantasy;
+   color: sienna;
+   line-height: 50px;
+}
+#d3
+{
+    width: 80%;
+    height: 500px;
+    clear: both;
+    background-color: black;
+    /* multiple bg image*/
+    background: url(pex.jpg) no-repeat right top,
+                url(pexe.jpg) repeat-y,
+                linear-gradient(yellow,lime);
+     background-size: 
+        30% 300px,
+        40% 250px,
+        100%;     
+}
+#d3 p{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: italic;
+    color: brown;
+    background-color: rgba(255, 227, 194,0.5);
+}

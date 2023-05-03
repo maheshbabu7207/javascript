@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+        /* combinator selector */
+        #d1{
+           width: 70%;
+           height: 500px;
+           background-color: aqua;
+        }
+        /*Descendant selector*/
+        #d1 section{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        #d1 p{
+            font-size: 20px;
+            text-align: justify;
+            color: red;
+            /* bold format*/
+            font-weight: bold;
+        }
+        #frm{
+            width: 50%;
+            height: 350px;
+            background-color: pink;
+        }
+        /* child selector*/
+        #frm>input{
+            font-size: 50px;
+            text-align: center;
+        }
+        #frm>fieldset{
+            width: 70%;
+            background-color: white;
+        }
+        fieldset>input{
+            font-size: 40px;
+            width: 100%;
+            border: 0px;
+            outline: 0px;
+        }
+        fieldset>legend{
+            font-size: 40px;
+            text-align: center;
+        }
+        #d2{
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+        }
+        div+marquee{
+            font-size: 40px;
+            width: 50%;
+            background-color: aquamarine;
+        }
+        #m{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+      <!--parent element-->
+    <div id="d1">
+          <!--child element-->
+    <section></section>
+    <br><br>
+    <section></section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Suscipit nobis repellat 
+        rem eaque modi ullam! Ducimus assumenda reiciendis 
+        ratione esse consequuntur ipsum at laboriosam ut corporis. 
+        Nisi omnis iure asperiores!
+        <section></section>
+    </p>
+ </div>
+ <section></section>
+ <p>
+      Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Commodi magnam consequatur
+      totam consequuntur cumque officia, iusto alias
+       labore atque quo consectetur quidem molestias hic neque, 
+       harum ex voluptatem distinctio? Minima at sequi veritatis quibusdam 
+       quia ipsam optio, dignissimos nobis eum temporibus aut nam non fugiat 
+       possimus modi exercitationem iusto, eos consequuntur natus. Beatae quos 
+       sint amet reiciendis quia quasi id reprehenderit iste, ipsam dignissimos
+        nobis consequatur tempora? Officiis, tenetur corporis?
+    </p>
+    <hr>
+    <br><br>
+    <form id="frm">
+        <input type="email" placeholder="email">
+        <br><br>
+        <input type="number" placeholder="Mobile">
+        <br><br>
+        <fieldset>
+            <legend>ENTER PASSWORD</legend>
+            <input type="password">
+        </fieldset>
+    </form>
+    <hr>
+    <br><br>
+    <div id="d2">
+
+    </div>
+    <marquee>
+        ADJACENT SELECTOR
+    </marquee>
+    <marquee id="m">
+        MARQUEE2
+    </marquee>
+</body>
+</html>

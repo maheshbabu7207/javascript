@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <h1>14/04/2023 Friday</h1> 
+   <script>
+    function fun()
+    {
+        var colors=["black","blue","greea","red","purple","hotpink","pink","lime","yellow"]
+        var randomNum=Math.floor(Math.random()*colors.length);
+        var randomNumtext=Math.floor(Math.random()*colors.length);
+        document.body.style.backgroundColor=colors[randomNum];
+        var Heading=document.querySelectorAll("h1");
+        Heading[0].style.color=colors[randomNumtext];
+        var settime=setTimeout(fun,1000)
+    }
+    fun()
+   </script>
+</body>
+</html>

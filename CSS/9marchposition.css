@@ -1,0 +1,11 @@
+#heading1{
+    font-size: 60px;
+    width: 60%;
+    background-color: lightcoral;
+    margin-top: 0px;
+    text-align: center;
+    /* by default position is static*/
+    position: relative;
+    top: 120px;
+    left: 100px;
+}

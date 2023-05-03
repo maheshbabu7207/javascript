@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <input placeholder="Enter the deleting index number">
+    <br><br>
+    <input type="button" value="delete" onclick="del()">
+    <h1 id="array"></h1>
+    <h1 id="result"></h1>
+    <hr>
+    <input placeholder="string to update array" id="update">
+    <br><br>
+    <input placeholder="Enter the index number" id="indexVal">
+    <br><br>
+    <input type="button" value="Update" onclick="updateArray()">
+    <h1 id="updatedArray"></h1>
+   <script>
+    var array=["Apple","Mango","Grapes","orange"]
+    document.getElementsByTagName("array").innerHTML=`[${array}]`
+    function del()
+    {
+        var val=document.querySelector("input")
+        val=val.value;
+        console.log(val);
+        var a=delete array[val];
+        document.getElementById("result").innerHTML=`[${array}]`
+
+    }
+    function  updateArray()
+    {
+        var val=document.getElementById("update").value
+        var indexPos=document.getElementById("indexVal").value
+        array[indexPos]=val
+        document.getElementById("updatedArray").innerHTML=`[${array}]`
+    }
+   </script> 
+</body>
+</html>

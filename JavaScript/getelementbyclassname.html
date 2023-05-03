@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="a"></h1>
+    <p class="a"></p>
+    <pre class="a"></pre>
+    <b class="a"></b>
+    <img class="a" height="200px">
+    <video class="a" height="200px"  ></video>
+    <script>
+        var allelements=document.getElementsByClassName("a")
+        console.log(allelements)
+        allelements[0].innerHTML="hi"
+        allelements[1].innerHTML="Welcome to all"
+        allelements[2].innerHTML="Sriramanavami"
+        allelements[3].innerHTML="Enter name"
+        allelements[4].src="pexe.jpg"
+        allelements[4].alt="girl imsges"
+        allelements[5].src="fish.mp4"
+        // allelements[5].controls="true"
+        // allelements[5].poster="poster.webp"   //video is not play
+        allelements[5].autoplay="true"
+        allelements[5].muted="true"
+        allelements[5].loop="true"
+    </script>
+</body>
+</html>

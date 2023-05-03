@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #header{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #vid{
+        width: 100%;
+        position: absolute;
+        top: -199px;
+        left: 0px;
+        z-index: -1;
+    }
+    button{
+        position: absolute;
+        width: 120px;
+        height: 40px;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    #left{
+        left: 40px;
+    }
+    #right{
+        right: 40px;
+    }
+   </style>
+</head>
+<body>
+    <div id="header">
+        <button id="left" onclick="left()"><</button>
+        <button id="right" onclick="right()">></button>
+        <video id="vid" src="1.mp4" autoplay muted loop></video>
+    </div>
+    <script>
+        var arrvid=["2.mp4","3.mp4","4.mp4"]
+        var num=0
+        function left()
+        {
+            num--;
+            if(num<0)
+            {
+                num=arrvid.length-1;
+                document.getElementById("vid").src=`${arrvid[num]}`;
+            }
+            else{
+                document.getElementById("vid").src=`${arrvid[num]}`;
+
+            }
+        }
+
+
+        function right()
+        {
+            num++;
+            if(num>arrvid.length-1)
+            {
+                num=0;
+                document.getElementById("vid").src=`${arrvid[num]}`;
+            }
+            else{
+                document.getElementById("vid").src=`${arrvid[num]}`;
+
+            }
+        }
+    </script>
+</body>
+</html>

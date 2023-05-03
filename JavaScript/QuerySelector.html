@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1></h1> 
+   <h1></h1>
+   <p id="a"></p>
+   <p id="b"></p>
+   <spam class="a"></spam>
+   <spam class="a"></spam>
+   <spam class="a"></spam>
+   <script>
+    var para1=document.querySelector("#a")
+    para1.innerHTML="this is done by query selecotr"
+    var spans=document.querySelectorAll(".a");
+    console.log(spans)
+    spans[0].innerHTML="1st span"
+   </script>
+</body>
+</html>

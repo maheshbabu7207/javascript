@@ -1,0 +1,73 @@
+h1
+{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0px;
+  transition: 5s;
+}
+h1:hover
+{
+  color: red;
+  text-decoration: underline wavy blue;
+  text-shadow: 0px 0px 10px cyan;
+}
+#field
+{
+    width: 400px;
+    height: 200px;
+    border-width: 10px;
+    border-color: black;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px aqua;
+    transition: 5s;
+}
+#field:hover
+{
+    border-color: lime;
+    background-color: black;
+    border-radius: 50%;
+    border-style: double;
+
+}
+a{
+    font-size: 60px;
+}
+a:active{
+    color: hotpink;
+}
+#d1{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(red,blue);
+    margin-top: 50px;
+}
+#d1:active{
+    background-image: linear-gradient(blueviolet,skyblue);
+    border: 10px solid red;
+    /* to apply border-radius
+    for all sides with different measurements*/
+    border-radius: 100%  0% 100% 0%;
+}
+#inputbox{
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    border-width: 10px;
+    padding: 20px;
+}
+#inputbox:focus{
+    background-color: pink;
+    border-radius: 40px;
+}
+#button{
+   padding: 20px;
+   font-size: 60px;
+   margin-left: 20px;
+}
+#button:focus{
+    background-color: black;
+    color: cyan;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+   <input type="button" value="click">
+   <h1 id="a"></h1>
+   <script>
+    var inp=document.querySelector("input")
+    inp.addEventListener("focus",fun)
+    function fun()
+    {
+        var heading=document.querySelector("#a")
+        heading.innerHTML="the button is clicked"
+    }
+   </script>
+</body>
+</html>

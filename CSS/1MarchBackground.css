@@ -1,0 +1,16 @@
+#d1
+{
+width: 50%;    
+height: 400px;
+background-color: black;
+background-image: url(pexe.jpg);
+background-repeat: no-repeat;
+background-size: 100% 400px;
+float: left;
+}
+#d1 h1
+{
+font-size: 40px;
+text-align: center;
+}
+
